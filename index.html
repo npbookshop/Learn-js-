@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Scribble&display=swap');
+
+		body{
+			height: 100%;
+			position: fixed;
+			background: black;
+			color: whitesmoke;
+		}
+		.changetheme{
+			width: 400px;
+			height: 250px;
+			display: none;
+			margin-left: 50px;
+			margin-top: 100px;
+			position: fixed;
+			border: 2px solid #fff;
+		}
+		.setting{
+			width: 60px;
+			height: 60px;
+			position: fixed;
+			margin-left: 20px;
+			margin-top: 70px;
+		}
+		.setting ion-icon{
+			width: 50px;
+			height: 50px;
+		}
+		.setting2{
+			width: 60px;
+			height: 60px;
+			position: fixed;
+			display: none;
+			margin-left: 20px;
+			margin-top: 70px;
+		}
+		.setting2 ion-icon{
+			width: 50px;
+			height: 50px;
+		}
+		.color1{
+			width: 50px;
+			height: 50px;
+			margin-left: 20px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: linear-gradient(orange,red);
+		}
+		.color2{
+			width: 50px;
+			height: 50px;
+			margin-left: 20px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: linear-gradient(red,#fff);
+		}
+		.color3{
+			width: 50px;
+			height: 50px;
+			margin-left: 20px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: linear-gradient(grey,black);
+		}
+		.color4{
+			width: 50px;
+			height: 50px;
+			margin-left: 100px;
+			margin-top: -233px;
+			border-radius: 50%;
+			background: linear-gradient(black,blue);
+		}
+		.img1{
+			width: 50px;
+			height: 50px;
+			margin-left: 100px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: url(t1.png);
+			background-size:cover;
+		}
+		.img2{
+			width: 50px;
+			height: 50px;
+			margin-left: 100px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: url(t2.jpeg);
+			background-size:cover;
+		}
+		.img3{
+			width: 50px;
+			height: 50px;
+			margin-left: 100px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: url(t3.jpeg);
+			background-size:cover;
+		}
+		.img4{
+			width: 50px;
+			height: 50px;
+			margin-left: 175px;
+			margin-top: -230px;
+			border-radius: 50%;
+			background: url(t4.jpeg);
+			background-size:cover;
+		}
+		.img5{
+			width: 50px;
+			height: 50px;
+			margin-left: 175px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: url(t5.jpg);
+			background-size:cover;
+		}
+		.img6{
+			width: 50px;
+			height: 50px;
+			margin-left: 175px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: url(t6.jpg);
+			background-size:cover;
+		}
+		.img7{
+			width: 50px;
+			height: 50px;
+			margin-left: 175px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: url(t7.jpg);
+			background-size:cover;
+		}
+		
+		.black{
+			width: 50px;
+			height: 50px;
+			margin-left: 20px;
+			margin-top: 10px;
+			border-radius: 50%;
+			background: black;
+		}
+		.startdiv{
+			width: 1450px;
+			height: 770px;
+			border: 2px solid #fff;
+		}
+        .startbutton{
+        	width: 270px;
+        	height: 148px;
+	        margin-left:580px ;
+	        margin-top: 00px;
+	        border-radius: 25px;
+	        position: absolute;
+	        border: 2px solid #fff;
+	    }
+	    .startbutton h1{
+	    	margin-left: 15px;
+	    	margin-top: -1px;
+	    	color: whitesmoke;
+	    	font-size: 3cm;
+	    }
+		.h14{
+			padding-left: 30px;
+			font-size: 4cm;
+            font-family: 'Rubik Scribble', system-ui;
+		}
+		.topic{
+		    padding-left: 25px;
+			padding-right: 25px;
+			font-size: 25px;
+		}
+		.topic b{
+			color: red;
+
+		}
+		.h11,.h12{
+			font-size: 4cm;
+		}
+		h2{
+			display: inline;
+			font-size: 2.3cm;
+		}
+		.h21{
+			margin-top: 0px;
+		}
+		.maindiv{
+			width: 1450px;
+			height: 770px;
+			border: 2px solid #fff;
+			background-size:cover;
+		}
+		.div1{
+			width: 350px;
+			height: 350px;
+			margin-top: 50px;
+			border-top: 6px solid orange;
+			border-radius: 50%;
+			animation: o 3s linear infinite ;
+		}
+		.div2{
+			width: 300px;
+			height: 300px;
+			margin-top: 20px;
+			border-top: 6px solid white;
+			border-radius: 50%;
+			animation: o 3s linear infinite ;
+		}
+		.div3{
+			width: 250px;
+			height: 250px;
+			margin-top: 20px;
+			border-top: 6px solid limegreen;
+			border-radius: 50%;
+			animation: o 3s linear infinite ;
+		}
+		@keyframes o{
+			0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}
+		}
+		.h13{
+			color: white;
+			margin-top: -190px;
+		}
+		.divm{
+			display: none;
+		}
+        	.button-s{
+        	width: 255px;
+        	height: 132px;
+	        margin-left:600px ;
+	        margin-top: 200px;
+	        border-radius: 25px;
+	        position: absolute;
+	        border: 2px solid #fff;
+	    }
+        	.button-r{
+        	width: 255px;
+        	height: 132px;
+	        margin-left:600px ;
+	        margin-top: 400px;
+	        border-radius: 25px;
+	        position: absolute;
+	        border: 2px solid #fff;
+	    }
+	    .button-r h1 ,.button-s h1{
+	    	margin-left: 22px;
+	    	margin-top: -6px;
+	    	color: whitesmoke;
+	    	font-size: 3cm;
+	    }
+	    .contact{
+	    	margin-left: 1100px;
+	    	margin-top: 450px;
+	    }
+	    ion-icon{
+	    	width: 30px;
+	    	height: 30px;
+	    	color: limegreen;
+	    }
+	    a{
+	    	color: limegreen;
+	    }
+	    .source{
+	    	width: 330px;
+	    	height: 450px;
+	    	display: none;
+	    	margin-left: 1050px;
+	    	margin-top: -300px;
+	    	border: 2px solid #fff;
+	    }
+	    .sourceb{
+	    	width: 80px;
+	    	height: 80px;
+	    	margin-left: 1060px;
+	    	margin-top: 50px; 
+	    	border: 2px solid #fff;
+	    	border-radius: 50%;
+	    }
+	    .sourceb h3{
+	    	padding-left: 2px;
+	    	padding-top: 8px;
+	    	font-size: 20px;
+	    }
+	    .sourcec{
+	    	width: 80px;
+	    	height: 80px;
+	    	display: none;
+	    	margin-left: 1060px;
+	    	margin-top: 50px;
+	    	border: 2px solid #fff;
+	    	border-radius: 50%;
+	    }
+	    .sourcec h3{
+	    	padding-left: 2px;
+	    	padding-top: 8px;
+	    	font-size: 20px; 	
+	    }
+	    .sourcec h3 ion-icon{
+	    	width: 80px;
+	    	height: 80px;
+	    	margin-left: -2;
+	    	margin-top: -27px;
+	    	color: red;
+	    }
+	    .source2{
+	    	width: 330px;
+	    	height: 450px;
+	    	display: none;
+	    	margin-left: 1050px;
+	    	margin-top: -300px;
+	    	border: 2px solid #fff;
+	    }
+	    .sourceb2{
+	    	width: 80px;
+	    	height: 80px;
+	    	margin-left: 1060px;
+	    	margin-top: 50px;
+	    	position: fixed;
+	    	border: 2px solid #fff;
+	    	border-radius: 50%;
+	    }
+	    .sourceb2 h3{
+	    	padding-left: 2px;
+	    	padding-top: 8px;
+	    	font-size: 20px;
+	    }
+	    .sourcec2{
+	    	width: 80px;
+	    	height: 80px;
+	    	display: none;
+	    	margin-left: 1060px;
+	    	margin-top: 50px;
+	    	border: 2px solid #fff;
+	    	border-radius: 50%;
+	    }
+	    .sourcec2 h3{
+	    	padding-left: 2px;
+	    	padding-top: 8px;
+	    	font-size: 20px; 	
+	    }
+	    .sourcec2 h3 ion-icon{
+	    	width: 80px;
+	    	height: 80px;
+	    	margin-left: -2;
+	    	margin-top: -27px;
+	    	color: red;
+	    }
+	    .source3{
+	    	width: 330px;
+	    	height: 450px;
+	    	display: none;
+	    	margin-left: 1050px;
+	    	margin-top: 00px;
+	    	border: 2px solid #fff;
+	    }
+	    .sourceb3{
+	    	width: 80px;
+	    	height: 80px;
+	    	margin-left: 1160px;
+	    	margin-top: 550px;
+	    	border: 2px solid #fff;
+	    	border-radius: 50%;
+	    }
+	    .sourceb3 h3{
+	    	padding-left: 12px;
+	    	padding-top: 8px;
+	    	font-size: 20px;
+	    }
+	    .sourcec3{
+	    	width: 80px;
+	    	height: 80px;
+	    	display: none;
+	    	margin-left: 1260px;
+	    	margin-top: 850px;
+	    	border: 2px solid #fff;
+	    	border-radius: 50%;
+	    }
+	    .sourcec3 h3{
+	    	padding-left: 2px;
+	    	padding-top: 8px;
+	    	font-size: 20px; 	
+	    }
+	    .sourcec3 h3 ion-icon{
+	    	width: 80px;
+	    	height: 80px;
+	    	margin-left: -2;
+	    	margin-top: -27px;
+	    	color: red;
+	    }
+	</style>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body id="body">
+	<div class="startdiv" id="theme1">
+		<h1 class="h14">Leran Javascript</h1>
+		<div class="startbutton" onclick='document.getElementById("body").style.position = "relative"'><h1>Start</h1></div>
+		</center>
+		<div class="changetheme" id="changetheme">
+			<div class="black"></div>
+			<div class="color1" onclick='document.getElementById("theme1").style.background ="linear-gradient(orange,red)";document.getElementById("theme2").style.background ="linear-gradient(red,orange)";document.getElementById("theme3").style.background ="linear-gradient(red,orange)";document.getElementById("theme4").style.background ="linear-gradient(orange,red)";document.getElementById("theme5").style.background ="linear-gradient(red,orange)";'></div>
+			<div class="color2" onclick='document.getElementById("theme1").style.background ="linear-gradient(red,#fff)";document.getElementById("theme2").style.background ="linear-gradient(#fff,red)";document.getElementById("theme3").style.background ="linear-gradient(#fff,red)";document.getElementById("theme4").style.background ="linear-gradient(red,#fff)"'></div>
+			<div class="color3" onclick='document.getElementById("theme1").style.background ="linear-gradient(grey,black)";document.getElementById("theme2").style.background ="linear-gradient(black,grey";document.getElementById("theme3").style.background ="linear-gradient(black,grey)";document.getElementById("theme4").style.background ="linear-gradient(grey,black)"'></div>
+			<div class="color4" onclick='document.getElementById("theme1").style.background ="linear-gradient(black,blue)";document.getElementById("theme2").style.background ="linear-gradient(blue,black)";document.getElementById("theme3").style.background ="linear-gradient(black,blue)";document.getElementById("theme4").style.background ="linear-gradient(blue,black)"'></div>
+			<div class="img1" onclick='document.getElementById("theme1").style.background ="url(t1.png)";document.getElementById("theme2").style.background ="url(t1.png)";document.getElementById("theme3").style.background ="url(t1.png)";document.getElementById("theme4").style.background ="url(t1.png)";'></div>
+			<div class="img2" onclick='document.getElementById("theme1").style.background ="url(t2.jpeg)";document.getElementById("theme2").style.background ="url(t2.jpeg)";document.getElementById("theme3").style.background ="url(t2.jpeg)";document.getElementById("theme4").style.background ="url(t2.jpeg)";'></div>
+			<div class="img3" onclick='document.getElementById("theme1").style.background ="url(t3.jpeg)";document.getElementById("theme2").style.background ="url(t3.jpeg)";document.getElementById("theme3").style.background ="url(t3.jpeg)";document.getElementById("theme4").style.background ="url(t3.jpeg)";'></div>
+			<div class="img4" onclick='document.getElementById("theme1").style.background ="url(t4.jpeg)";document.getElementById("theme2").style.background ="url(t4.jpeg)";document.getElementById("theme3").style.background ="url(t4.jpeg)";document.getElementById("theme4").style.background ="url(t4.jpeg)";'></div>
+			<div class="img5" onclick='document.getElementById("theme1").style.background ="url(t5.jpg)";document.getElementById("theme2").style.background ="url(t5.jpg)";document.getElementById("theme3").style.background ="url(t5.jpg)";document.getElementById("theme4").style.background ="url(t5.jpg)";'></div>
+			<div class="img6" onclick='document.getElementById("theme1").style.background ="url(t6.jpg)";document.getElementById("theme2").style.background ="url(t6.jpg)";document.getElementById("theme3").style.background ="url(t6.jpg)";document.getElementById("theme4").style.background ="url(t6.jpg)";'></div>
+			<div class="img7" onclick='document.getElementById("theme1").style.background ="url(t7.jpg)";document.getElementById("theme2").style.background ="url(t7.jpg)";document.getElementById("theme3").style.background ="url(t7.jpg)";document.getElementById("theme4").style.background ="url(t7.jpg)";'></div>
+			<div class="img8"></div>
+		</div>
+		<div class="setting" onclick='document.getElementById("changetheme").style.display ="block";document.getElementById("setting").style.display ="none";document.getElementById("setting2").style.display ="block" ' id="setting">
+			<ion-icon name="settings-outline"></ion-icon>
+		</div>
+		<div class="setting2" id="setting2" onclick='document.getElementById("changetheme").style.display ="none";document.getElementById("setting2").style.display ="none";document.getElementById("setting").style.display ="block"'>
+			<ion-icon name="settings-outline"></ion-icon>
+		</div>
+		<div class="contact">
+		<a href="https://www.instagram.com/hacker_life_001?igsh=MzY1NDJmNzMyNQ%3D%3D"><ion-icon name="logo-instagram"></ion-icon>hacker_life_001</a>
+	</div>
+	</div>
+<br><br><br>
+<!--next div-->
+	<div class="maindiv" id="theme2">
+		<p class="topic">JavaScript Can Change HTML Content <b>onclick='document.getElementById("Id").innerHTML = "Contant";'</b></p>
+	<center>
+	<h1 class="h11" onclick='document.getElementById("m").innerHTML = "Panchal";'>NaveeN</h1>
+	<h1 class="h12" id="m"></h1>
+	<div class="source" id="Source-1">
+		
+	</div>
+	<div class="sourceb" onclick='document.getElementById("Source-1").style.display = "block"; document.getElementById("s1").style.display ="none"; document.getElementById("can1").style.display = "block"' id="s1"><h3>Source</h3></div>
+	<div class="sourcec" onclick='document.getElementById("Source-1").style.display = "none"; document.getElementById("can1").style.display ="none"; document.getElementById("s1").style.display ="block"' id="can1"><h3><ion-icon name="close-outline"></ion-icon></h3></div>
+	</center>
+</div>
+
+	<br><br><br>
+<!--next div-->
+	<div class="maindiv" id="theme3">
+		<p class="topic">JavaScript Can Change HTML Attribute Values <b>onclick='document.getElementById("Id").src = "#";'</b></p>
+	<center>
+		<h2 class="h21" onclick='document.getElementById("src").src ="R.gif"'>Sun</h2>
+		<img src="R.gif" id="src" alt="img not found">
+		<h2 class="h22" onclick='document.getElementById("src").src = "moon.gif"'>Moon</h2>
+
+	<div class="source2" id="Source-2">
+		
+	</div>
+	<div class="sourceb" onclick='document.getElementById("Source-2").style.display = "block"; document.getElementById("s2").style.display ="none"; document.getElementById("can2").style.display = "block"' id="s2"><h3>Source</h3></div>
+	<div class="sourcec" onclick='document.getElementById("Source-2").style.display = "none"; document.getElementById("can2").style.display ="none"; document.getElementById("s2").style.display ="block"' id="can2"><h3><ion-icon name="close-outline"></ion-icon></h3></div>
+	</center>
+</div>
+
+	<br><br><br>
+<!--next div-->
+	<div class="maindiv" id="theme4">
+		<p class="topic">JavaScript Can Change HTML Styles (CSS) <b>onclick='document.getElementById("Id").style.display = "none, block, inline, inline-block etc.";'</b></p>
+	<center>
+		<div class="divm" id="off">
+	<div class="div1">
+		<div class="div2">
+			<div class="div3"></div>
+		</div>
+	</div>
+	<h1 class="h13">India </h1>
+	<div class="button-s" onclick='document.getElementById("off") .style.display="none"; document.getElementById("r").style.display = "block"'>
+		<h1>Stop</h1>
+	</div>
+</div>
+</center>
+	<div class="button-r" onclick='document.getElementById("off") .style.display="block"; document.getElementById("r").style.display = "none"' id="r">
+		<h1>Run</h1>
+	</div>
+
+	<div class="source3" id="Source-3">
+		
+	</div>
+	<div class="sourceb3" onclick='document.getElementById("Source-3").style.display = "block"; document.getElementById("s3").style.display ="none"; document.getElementById("can3").style.display = "block"' id="s3"><h3>Source</h3></div>
+	<div class="sourcec" onclick='document.getElementById("Source-3").style.display = "none"; document.getElementById("can3").style.display ="none"; document.getElementById("s3").style.display ="block"' id="can3"><h3><ion-icon name="close-outline"></ion-icon></h3></div>
+</div>
+
+<!--next div-->
+
+	<div class="maindiv" id="theme5">
+		<p class="topic">JavaScript Can Change HTML Styles (CSS) <b>Empty</b></p>
+
+	<div class="source4" id="Source-4">
+		
+	</div>
+	<div class="source4" onclick='document.getElementById("Source-4").style.display = "block"; document.getElementById("s4").style.display ="none"; document.getElementById("can4").style.display = "block"' id="s4"><h3>Source</h3></div>
+	<div class="sourced" onclick='document.getElementById("Source-4").style.display = "none"; document.getElementById("can4").style.display ="none"; document.getElementById("s4").style.display ="block"' id="can4"><h3><ion-icon name="close-outline"></ion-icon></h3></div>
+</div>
+
+</body>
+</html>
